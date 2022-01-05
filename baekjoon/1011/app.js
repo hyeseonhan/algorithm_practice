@@ -28,3 +28,5 @@ function solution(input){
         console.log(arr[arr.length - 1])
     }
 }
+
+// https://nyang-in.tistory.com/177
