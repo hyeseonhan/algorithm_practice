@@ -14,13 +14,14 @@ let result = []
 
 for(let i = 0; i < +input[1]; i++){
     decimal += m[i] * Math.pow(A, +input[1] - i -1)
-
-    while (decimal) {
-        result.push(decimal % B)
-        result.reverse()
-        decimal = Math.floor(decimal / B)
-    }
-    console.log(result)
 }
 
+while (decimal) {
+    result.push(decimal % B)
+    decimal = Math.floor(decimal / B)
+}
+result = result.reverse()
+console.log(result.join(' '))
 
+// 진접 변환 2
+// https://jae04099.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%B0%B1%EC%A4%80-11576-Base-Conversion
